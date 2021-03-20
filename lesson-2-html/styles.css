@@ -23,6 +23,11 @@ body {
   font-size: 50px;
   color: #555;
 }
+.w3-logo:hover {
+  text-decoration: none;
+  font-size: 50px;
+  color: green;
+}
 .dotcom {
   color: green;
 }
@@ -322,6 +327,10 @@ tr {
 }
 .black-cl {
   color: black;
+}
+.black-cl:hover {
+  color: green;
+  text-decoration: underline !important;
 }
 .w3-note,
 .w3-warning {
