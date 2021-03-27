@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node"
+    "start": "nodemon ./src/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DeanTornado22/web-d03/issues"
   },
-  "homepage": "https://github.com/DeanTornado22/web-d03#readme"
+  "homepage": "https://github.com/DeanTornado22/web-d03#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
