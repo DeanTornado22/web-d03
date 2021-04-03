@@ -7,6 +7,10 @@ const postRoute = require('./routers/postRoutes')
 const loginRoute = require('./routers/loginRoutes')
 
 app.use(bodyParser.json())
+app.use('/users', (req, res, next) => {
+  console.log(`The request received at:`, new Date())
+  next()
+})
 app.use('/users', userRoute)
 app.use('/posts', postRoute)
 app.use('/login', loginRoute)
