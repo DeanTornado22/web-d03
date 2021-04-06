@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //GET
+        $('#show-text-btn').click(function () {
+          alert($('#text').text())
+        })
+        $('#show-html-btn').click(function () {
+          alert($('p').html())
+        })
+        $('#show-value-btn').click(function () {
+          alert($('#name-input').val())
+        })
+        $('#show-attribute-btn').click(function () {
+          alert($('#name-input').attr('placeholder'))
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <p class="paragraph" id="text">This is Text</p>
+    <label for="username">Username</label>
+    <input
+      type="text"
+      id="name-input"
+      name="username"
+      placeholder="Input text..."
+      value="Hello mtfk"
+    />
+
+    <h4 id="get-heading">GET</h4>
+    <button id="show-text-btn">Show Text</button>
+    <button id="show-html-btn">Show HTML</button>
+    <button id="show-value-btn">Show Value</button>
+    <button id="show-attribute-btn">Show Attribute</button>
+
+    <h4 id="ajax-heading">AJAX</h4>
+    <button id="load-btn">Load Users</button>
+    <button id="get-btn">Get Users</button>
+    <button id="post-btn">Post Users</button>
+  </body>
+</html>
