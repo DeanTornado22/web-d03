@@ -1,0 +1,29 @@
+.container--primary {
+  background-color: aqua;
+}
+
+.img-style {
+  width: 50px;
+  height: 50px;
+}
+
+/* .feed-img {
+  background-image: url('../img/hot-girl-Nam-Định.jpg');
+  height: 65vh;
+  width: 150;
+  background-repeat: no-repeat;
+} */
+.col-style {
+  border-right: 1px solid #111;
+}
+@media only screen and (max-width: 1100px) {
+  .text-style {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .col-style {
+    border: none;
+  }
+}
